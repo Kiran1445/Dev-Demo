@@ -8,6 +8,8 @@ on:
   create:
     tag:
       '*'
+    branch:
+      'develop'
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -20,4 +22,4 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Test for Tag execution
         run: echo "Hello SaiKiran. Tag has been created and this job has triggered"
-        
+
